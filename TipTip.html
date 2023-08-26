@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F1EEFC;
+    color: white;
+    text-align: center;
+    align-items: center;
+       
+  }
+  
+  .text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0px;
+    padding:15px;
+    background:linear-gradient(90deg, #7966FF, #a177e5);
+  }
+
+  .card {
+    height: 70px;
+    width: ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white ;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin:10px;
+    
+  }
+
+  .button {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    color:white;
+  }
+
+  #button1 {
+    background-color: #7966FF;
+    
+  }
+
+  #button2 {
+    background-color: #DCDCDC;
+  }
+
+  .container {
+    height: ;
+    width: 100%;
+    display: none;
+    padding-bottom:5px;
+  }
+
+  #container1 {
+    background-color: ;
+    text-align: center;
+    align-items: center;
+    padding-top:10px;
+  }
+
+  #container2 {
+    background-color: ;
+    text-align: center;
+    align-items: center;
+    padding-top:10px;
+  }
+  
+  .cardB {
+    width: ;
+    padding: 20px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: white;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+  }
+  
+  .containerB {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+  }
+  
+  .details {
+    margin-top: 10px;
+    color:black;
+    text-align:left;
+  }
+  
+  
+  .bottom-button {
+    width: 80%;
+    height: 50px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+    border-radius: 23px;
+    color: white;
+    background: linear-gradient(90deg, #7966FF, #a177e5);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ .submit {
+ display: flex;
+ justify-content: center;
+ 
+ 
+  }
+  
+ .paragraph {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     font-size:11px;
+     padding-left:15%;
+     padding-right:15%;
+     color:black;
+ }
+  
+</style>
+</head>
+<body>
+
+<div class="text">TipTip Payment</div>
+
+<div class="card">
+  <button id="button1" class="button">Mobile Banking</button>
+  <button id="button2" class="button">Crypto Pay</button>
+</div>
+
+<div id="container1" class="container">
+    
+<div class="cardB">
+  <div class="containerB">
+    <div class="header">
+      <img src="https://i.postimg.cc/vcm99tFq/image.jpg" alt="Profile Image">
+      <div class="name">Bkash Agent</div>
+    </div>
+    <div class="details">
+      Number: 012345678900<br>
+      Amount: 100 BDT
+    </div>
+  </div>
+</div>
+
+
+<div class="cardB">
+  <div class="containerB">
+    <div class="header">
+      <img src="https://i.postimg.cc/Pxb5hCHm/unnamed.png" alt="Profile Image">
+      <div class="name">Nagad Agent</div>
+    </div>
+    <div class="details">
+      Number: 01700000999<br>
+      Amount: 120 BDT
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+</div>
+<div id="container2" class="container">
+
+
+<div class="cardB">
+  <div class="containerB">
+    <div class="header">
+      <img src="https://i.postimg.cc/02Lz6G2j/KTF6-M73-FKBACNI5-JQ4-S3-EW7-MRI.png" alt="Profile Image">
+      <div class="name">USDT (TRC20)</div>
+    </div>
+    <div class="details">
+      Address: <p style="font-size:12px;">TH8Ef8FVNvkRBiTc3wiRs2sn9oR7n7Qt3Y</p> <br>
+      Amount: 1 USDT
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<script>
+  const button1 = document.getElementById("button1");
+  const button2 = document.getElementById("button2");
+  const container1 = document.getElementById("container1");
+  const container2 = document.getElementById("container2");
+
+  container1.style.display = "block";
+  container2.style.display = "none";
+
+  button1.addEventListener("click", function() {
+    button1.style.backgroundColor = "#7966FF";
+    button2.style.backgroundColor = "#DCDCDC";
+    container1.style.display = "block";
+    container2.style.display = "none";
+  });
+
+  button2.addEventListener("click", function() {
+    button1.style.backgroundColor = "#DCDCDC";
+    button2.style.backgroundColor = "#7966FF";
+    container1.style.display = "none";
+    container2.style.display = "block";
+  });
+</script>
+
+<div class="submit">
+    
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEyTnE5XM8dvNV45rhXhOStq1zzv1pwiOqhbZ3fk_Oy9r62Q/viewform?usp=sf_link" class="bottom-button">Submit Now</a>
+    
+    
+</div>
+<div class="paragraph">
+    
+    
+   if you use bkash or nagad, make sure you Cash out in this number, if you send recharge or others, then you can't receive money
+    
+</div> 
+    
+</body>
+
+</html>
